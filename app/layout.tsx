@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
+import * as Sentry from '@sentry/nextjs';
 
 import './globals.css';
 import { cn } from '@/lib/utils';
@@ -11,10 +12,17 @@ const fontSans = Plus_Jakarta_Sans({
   variable: '--font-sans',
 });
 
-export const metadata: Metadata = {
-  title: 'Medtek',
-  description: 'A modern & elegent management system for hospitals designed for both doctors and patients.',
-};
+// ✅ Use generateMetadata instead of static metadata
+export function generateMetadata(): Metadata {
+  return {
+    title: 'Medtek',
+    description:
+      'A modern & elegant management system for hospitals designed for both doctors and patients.',
+    other: {
+      ...Sentry.getTraceData(),
+    },
+  };
+}
 
 export default function RootLayout({
   children,
@@ -25,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'min-h-screen bg-dark-300 font-sans antialiased ',
+          'min-h-screen bg-dark-300 font-sans antialiased',
           fontSans.variable
         )}
       >
