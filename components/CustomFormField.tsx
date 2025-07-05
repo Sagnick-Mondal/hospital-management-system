@@ -58,7 +58,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
   switch (fieldType) {
     case FormFieldType.INPUT:
       return (
-        <div className="flex rounded-md border border-dark-500 bg-dark-400">
+        <div className="flex rounded-3xl border border-dark-500 bg-dark-400">
           {iconSrc && (
             <Image
               src={iconSrc}
@@ -87,7 +87,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
             withCountryCallingCode
             value={field.value as E164Number | undefined}
             onChange={field.onChange}
-            className="input-phone"
+            className="input-phone rounded-3xl"
           />
         </FormControl>
       );
@@ -150,7 +150,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
               checked={field.value}
               onCheckedChange={field.onChange}
             />
-            <label htmlFor={props.name} className="checkbox-label">
+            <label htmlFor={props.name} className="checkbox-label text-gray-900">
               {props.label}
             </label>
           </div>
@@ -171,7 +171,7 @@ const CustomFormField = (props: CustomProps) => {
       render={({ field }) => (
         <FormItem className="flex-1">
           {fieldType !== FormFieldType.CHECKBOX && label && (
-            <FormLabel htmlFor={name}>{label}</FormLabel>
+            <FormLabel htmlFor={name} className='text-gray-900'>{label}</FormLabel>
           )}
 
           <RenderField field={field} props={props} />

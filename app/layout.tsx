@@ -15,7 +15,7 @@ const fontSans = Plus_Jakarta_Sans({
 // ✅ Use generateMetadata instead of static metadata
 export function generateMetadata(): Metadata {
   return {
-    title: 'Medtek',
+    title: 'Medtek-An Appointment App',
     description:
       'A modern & elegant management system for hospitals designed for both doctors and patients.',
     other: {
@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'min-h-screen bg-dark-300 font-sans antialiased',
+          'min-h-screen bg-gradient-to-b from-gray-200 via-green-200 to-blue-950 font-sans antialiased',
           fontSans.variable
         )}
       >

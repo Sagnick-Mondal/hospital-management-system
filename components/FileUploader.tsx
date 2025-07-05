@@ -18,7 +18,7 @@ const FileUploader = ({ files, onChange }: FileUploaderProps) => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
-    <div {...getRootProps()} className="file-upload">
+    <div {...getRootProps()} className="file-upload rounded-2xl">
       <input {...getInputProps()} />
       {files && files?.length > 0 ? (
         <Image
@@ -42,7 +42,7 @@ const FileUploader = ({ files, onChange }: FileUploaderProps) => {
               or drag and drop
             </p>
             <p className="text-12-regular">
-              SVG, PNG, JPG or GIF (max. 800x400px)
+              JPEG, PNG, JPG  (max. 800x400px)
             </p>
           </div>
         </>

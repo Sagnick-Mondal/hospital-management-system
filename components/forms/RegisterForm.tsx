@@ -83,13 +83,13 @@ const RegisterForm = ({ user }: { user: User }) => {
         className="flex-1 space-y-12"
       >
         <section className="space-y-4">
-          <h1 className="header">Welcome 👋</h1>
-          <p className="text-dark-700">Let us know more about yourself.</p>
+          <h1 className="header text-gray-700">Welcome 👋</h1>
+          <p className="text-gray-700">Tell us more about yourself.</p>
         </section>
 
         <section className="space-y-6">
           <div className="mb-9 space-y-1">
-            <h2 className="sub-header">Personal information</h2>
+            <h2 className="sub-header text-gray-800">Personal information</h2>
           </div>
 
           <CustomFormField
@@ -97,7 +97,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             control={form.control}
             name="name"
             label="Full name"
-            placeholder="John Doe"
+            placeholder="Your Name"
             iconSrc="/assets/icons/user.svg"
             iconAlt="user"
           />
@@ -108,7 +108,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="email"
               label="Email"
-              placeholder="johndoe@gmail.com"
+              placeholder="yourmail@gmail.com"
               iconSrc="/assets/icons/email.svg"
               iconAlt="email"
             />
@@ -118,7 +118,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="phone"
               label="Phone number"
-              placeholder="(555) 123-4567"
+              placeholder="999-999-9999"
             />
           </div>
 
@@ -162,7 +162,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="address"
               label="Address"
-              placeholder="14 street, New york, NY - 5101"
+              placeholder="6/A, Sector 5, Salt Lake City"
             />
 
             <CustomFormField
@@ -170,7 +170,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="occupation"
               label="Occupation"
-              placeholder="Software Engineer"
+              placeholder="Research Scientist"
             />
           </div>
 
@@ -180,7 +180,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="emergencyContactName"
               label="Emergency contact name"
-              placeholder="Guardian's name"
+              placeholder="Emergency contact name"
             />
 
             <CustomFormField
@@ -188,14 +188,14 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="emergencyContactNumber"
               label="Emergency contact number"
-              placeholder="(555) 123-4567"
+              placeholder="989-999-9999"
             />
           </div>
         </section>
 
         <section className="space-y-6">
           <div className="mb-9 space-y-1">
-            <h2 className="sub-header">Medical information</h2>
+            <h2 className="sub-header text-gray-800">Medical information</h2>
           </div>
 
           <CustomFormField
@@ -227,7 +227,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="insuranceProvider"
               label="Insurance provider"
-              placeholder="BlueCross BlueShield"
+              placeholder="LIC Health Insurance"
             />
 
             <CustomFormField
@@ -245,7 +245,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="allergies"
               label="Allergies (if any)"
-              placeholder="Peanuts, Penicillin, Pollen"
+              placeholder="Peanuts, Animals, Pollen"
             />
 
             <CustomFormField
@@ -263,7 +263,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="familyMedicalHistory"
               label=" Family medical history (if relevant)"
-              placeholder="Mother had brain cancer, Father has hypertension"
+              placeholder="Mother has thyroid, Father had hypertension"
             />
 
             <CustomFormField
@@ -271,14 +271,14 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="pastMedicalHistory"
               label="Past medical history"
-              placeholder="Appendectomy in 2015, Asthma diagnosis in childhood"
+              placeholder="Asthma diagnosis in childhood"
             />
           </div>
         </section>
 
         <section className="space-y-6">
           <div className="mb-9 space-y-1">
-            <h2 className="sub-header">Identification and verification</h2>
+            <h2 className="sub-header text-gray-800">Identification and verification</h2>
           </div>
 
           <CustomFormField
@@ -300,7 +300,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             control={form.control}
             name="identificationNumber"
             label="Identification Number"
-            placeholder="123456789"
+            placeholder="ABC123456789"
           />
 
           <CustomFormField
@@ -318,7 +318,7 @@ const RegisterForm = ({ user }: { user: User }) => {
 
         <section className="space-y-6">
           <div className="mb-9 space-y-1">
-            <h2 className="sub-header">Consent and Privacy</h2>
+            <h2 className="sub-header text-gray-900">Consent and Privacy</h2>
           </div>
 
           <CustomFormField
