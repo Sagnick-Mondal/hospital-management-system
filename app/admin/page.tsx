@@ -2,7 +2,7 @@ export const revalidate = 0;
 
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { HeartPulse } from 'lucide-react';
 import { StatCard } from '@/components/StatCard';
 import { columns } from '@/components/table/columns';
 import { DataTable } from '@/components/table/DataTable';
@@ -15,13 +15,7 @@ const Admin = async () => {
     <div className="mx-auto flex max-w-7xl flex-col space-y-14">
       <header className="admin-header">
         <Link href="/" className="cursor-pointer">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            height={32}
-            width={162}
-            alt="Logo"
-            className="h-8 w-fit"
-          />
+          <h1 className="header flex text-gray-100"><HeartPulse size={35} style={{marginRight: '8px'}}/>  Welcome to MedTek</h1>
         </Link>
 
         <p className="text-16-semibold">Admin Dashboard</p>
@@ -29,8 +23,8 @@ const Admin = async () => {
 
       <main className="admin-main">
         <section className="w-full space-y-4">
-          <h1 className="header">Welcome 👋</h1>
-          <p className="text-dark-700">
+          <h1 className="header text-gray-900">Welcome 👋</h1>
+          <p className="text-gray-900">
             Start the day with managing new appointments
           </p>
         </section>
