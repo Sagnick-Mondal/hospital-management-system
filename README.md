@@ -26,7 +26,7 @@
 
 | Login Page | Dashboard | Patient Record |
 |------------|-----------|----------------|
-| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) | ![Patient](screenshots/patient-record.png) |
+| ![Login](/public/screenshots/login.png) | ![Dashboard](/public/screenshots/dashboard.png) | ![Patient](/public/screenshots/patient-record.png) |
 
 ## Get Started
 
