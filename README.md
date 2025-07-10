@@ -28,6 +28,8 @@
 |------------|-----------|----------------|
 | ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) | ![Patient](screenshots/patient-record.png) |
 
+## Get Started
+
 ### 1. Clone the Repository
 git clone https://github.com/Sagnick-Mondal/hospital-management-system.git
 cd hospital-management-system
@@ -37,11 +39,19 @@ npm install
 
 ### 3. Set up Environment Variables
 Create a .env.local file and add:
-NEXT_PUBLIC_API_URL=your_api_url
-NEXT_PUBLIC_APPWRITE_ENDPOINT=your_appwrite_url
-NEXT_PUBLIC_APPWRITE_PROJECT=your_project_id
-NEXT_PUBLIC_APPWRITE_DATABASE=your_database_id
-NEXT_PUBLIC_APPWRITE_COLLECTION=your_collection_id
+1. PROJECT_ID=
+2. API_KEY=
+3. DATABASE_ID=
+4. PATIENT_COLLECTION_ID=
+5. APPOINTMENT_COLLECTION_ID=
+6. DOCTOR_COLLECTION_ID=
+7. NEXT_PUBLIC_BUCKET_ID=
+8. NEXT_PUBLIC_ENDPOINT=
+9. NEXT_PUBLIC_ADMIN_PASSKEY=
+10. SENTRY_AUTH_TOKEN=
+11. TWILIO_ACCOUNT_SID=
+12. TWILIO_AUTH_TOKEN=
+13. TWILIO_PHONE_NUMBER=
 
 ### 4. Run the App
 npm run dev
